@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="game.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <title>Rainbow Snake</title>
+    </head>
+    <body>
+        <h1>RAINBOW SNAKE</h1>
+        <noscript>Please enable javascript.</noscript>
+        <div id="startmenu">
+            <br>
+            <h2>Grid: <input type="number" min="3" max="200" value="25" id="gridnum"/></h2>
+            <h2>Speed: <input type="number" min="0" max="10" value="1" id="speednum"/></h2>
+            <h2>Tail Starting Length: <input type="number" min="0" max="50" value="1" id="tailnum"/></h2>
+            <button class="btn btn-light btn-lg" onclick="Start();">Start!</button>        
+        </div>
+        <div id="gameover" class="hidden">
+            <br>
+            <h1>Game Over!</h1>
+            <button class="btn btn-light btn-lg" onclick="window.location.reload();">Restart</button>        
+        </div>
+        <canvas id="gamecanvas" width="500" height="500">
+            Canvas is not supported in your browser.
+        </canvas>
+    </body>
+</html>
